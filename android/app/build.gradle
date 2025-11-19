@@ -1,0 +1,22 @@
+android {
+    namespace "p.a.t.s"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "p.a.t.s"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
